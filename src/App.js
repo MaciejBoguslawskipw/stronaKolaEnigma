@@ -21,7 +21,7 @@ function App() {
         <Route path="/memes" element={<Memes />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/management" element={<Management />} />
-        <Route path="/downloadmoream" element={<DownloadMoreRam />} />
+        <Route path="/downloadmoreram" element={<DownloadMoreRam />} />
         <Route path="/projects" element={<Projects />}>
           <Route path="completed" element={<Completed />} />
           <Route path="in-progress" element={<InProgress />} />
