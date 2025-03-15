@@ -7,6 +7,9 @@ import Memes from './components/Memes';
 import Contact from './components/Contact';
 import Management from './components/Management';
 import DownloadMoreRam from './components/DownloadMoreRam';
+import Completed from './components/Projects/Completed'; // Dodane
+import InProgress from './components/Projects/InProgress'; // Dodane
+import Planned from './components/Projects/Planned'; // Dodane
 
 function App() {
   return (
@@ -20,16 +23,14 @@ function App() {
         <Route path="/management" element={<Management />} />
         <Route path="/downloadmoream" element={<DownloadMoreRam />} />
         <Route path="/projects" element={<Projects />}>
-        <Route path="completed" element={<Completed />} />
-        <Route path="in-progress" element={<InProgress />} />
-        <Route path="planned" element={<Planned />} />
-</Route>
+          <Route path="completed" element={<Completed />} />
+          <Route path="in-progress" element={<InProgress />} />
+          <Route path="planned" element={<Planned />} />
+        </Route>
       </Routes>
       <Footer />
     </Router>
   );
 }
-
-
 
 export default App;
