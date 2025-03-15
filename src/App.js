@@ -19,10 +19,17 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/management" element={<Management />} />
         <Route path="/downloadmoream" element={<DownloadMoreRam />} />
+        <Route path="/projects" element={<Projects />}>
+        <Route path="completed" element={<Completed />} />
+        <Route path="in-progress" element={<InProgress />} />
+        <Route path="planned" element={<Planned />} />
+</Route>
       </Routes>
       <Footer />
     </Router>
   );
 }
+
+
 
 export default App;
