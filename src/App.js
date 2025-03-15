@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Projects from './components/Projects/Projects';
+import Collaborations from './components/Collaborations';
+import Memes from './components/Memes';
+import Contact from './components/Contact';
+import Management from './components/Management';
+import DownloadMoreRam from './components/DownloadMoreRam';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Projects />} />
+        <Route path="/collaborations" element={<Collaborations />} />
+        <Route path="/memes" element={<Memes />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/management" element={<Management />} />
+        <Route path="/downloadmoream" element={<DownloadMoreRam />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
