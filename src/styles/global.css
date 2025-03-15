@@ -205,3 +205,45 @@
   button:hover {
     animation: neonGlow 1s infinite alternate;
   }
+
+  /* Stylowanie sekcji zarządu i opiekunów */
+.management-list, .opiekunowie {
+    background-color: #262626;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 3px solid #00ff00;
+  }
+  
+  .management-list h2, .opiekunowie h2 {
+    color: #00ff00;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  }
+  
+  .management-list p, .opiekunowie p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #00ff00;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    .management-list h2, .opiekunowie h2 {
+      font-size: 1.3rem;
+    }
+  
+    .management-list p, .opiekunowie p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .management-list h2, .opiekunowie h2 {
+      font-size: 1.2rem;
+    }
+  
+    .management-list p, .opiekunowie p {
+      font-size: 0.9rem;
+    }
+  }
