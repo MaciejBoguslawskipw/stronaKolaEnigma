@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Koło Naukowe Enigma - Strona internetowa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Witaj w repozytorium strony internetowej Koła Naukowego Enigma! Poniżej znajdziesz instrukcję, jak uruchomić projekt lokalnie na swoim komputerze.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Technologie**
+- **React.js** – biblioteka do budowy interfejsów użytkownika.
+- **React Router** – zarządzanie routingiem w aplikacji.
+- **CSS** – stylowanie strony.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Instrukcja uruchomienia projektu**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Krok 1: Sklonuj repozytorium**
+Otwórz terminal i wykonaj następującą komendę, aby sklonować repozytorium na swój komputer:
 
-### `npm test`
+```bash
+git clone https://github.com/MaciejBoguslawskipw/stronaKolaEnigma.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Przejdź do sklonowanego folderu:
 
-### `npm run build`
+```bash
+cd enigma
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Krok 2: Zainstaluj zależności**
+Projekt korzysta z zależności wymienionych w pliku `package.json`. Aby je zainstalować, uruchom:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Krok 3: Uruchom projekt lokalnie**
+Po zainstalowaniu zależności uruchom projekt za pomocą:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aplikacja zostanie uruchomiona w trybie deweloperskim. Otwórz przeglądarkę i przejdź pod adres:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Krok 4: Przeglądaj stronę**
+Strona powinna być już dostępna w przeglądarce. Możesz przeglądać poszczególne zakładki:
+- **Strona główna** – podstawowe informacje o kole.
+- **Projekty** – lista projektów (wykonane, w trakcie, w planach).
+- **Współprace** – informacje o współpracach koła.
+- **Memy z IT** – zabawne memy związane z informatyką.
+- **Kontakt** – dane kontaktowe.
+- **Zarząd** – informacje o zarządzie i opiekunach koła.
+- **Pobierz RAM** – żartobliwa zakładka.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### **Krok 5: Zatrzymaj projekt**
+Aby zatrzymać działający projekt, wciśnij w terminalu kombinację klawiszy:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+Ctrl + C
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## **Struktura projektu**
+Oto główne pliki i foldery w projekcie:
 
-### Making a Progressive Web App
+```
+enigma-koło-naukowe/
+├── public/              # Pliki statyczne (np. index.html)
+├── src/                 # Główny folder z kodem źródłowym
+│   ├── components/      # Komponenty React
+│   ├── styles/          # Pliki CSS
+│   ├── App.js           # Główny komponent aplikacji
+│   └── index.js         # Punkt wejścia aplikacji
+├── package.json         # Zależności i skrypty
+└── README.md            # Ten plik
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## **Dostępne skrypty**
+W projekcie dostępne są następujące skrypty:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **`npm start`** – uruchamia projekt w trybie deweloperskim.
+- **`npm build`** – buduje projekt do produkcji.
+- **`npm test`** – uruchamia testy (jeśli są zdefiniowane).
+- **`npm eject`** – usuwa narzędzia Create React App (nieodwracalne).
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## **Autor**
+Projekt Tworzony przez Koło naukowe "Enigma"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+**Miłego kodowania!** 🚀
