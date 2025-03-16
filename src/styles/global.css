@@ -247,3 +247,33 @@
       font-size: 0.9rem;
     }
   }
+
+  /* Sekcja memów */
+.memes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.meme-item {
+  background-color: #262626;
+  padding: 1rem;
+  border-left: 3px solid #00ff00;
+}
+
+.meme-item h3 {
+  color: #00ff00;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.meme-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 1.2rem;
+}
